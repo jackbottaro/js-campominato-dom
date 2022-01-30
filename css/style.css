@@ -25,7 +25,8 @@
 }
 
 #grid .cell.bomb {
-  background-color: #ffd803;
+  background-color: #e16162;
+  border-radius: 2px;
 }
 
 #grid .cell.bomb::before {
