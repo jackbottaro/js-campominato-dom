@@ -1,0 +1,37 @@
+#nav-menu {
+  background-color: #abd1c6;
+  height: 80px;
+}
+
+#grid {
+  width: 650px;
+  height: 650px;
+  margin: 0 auto;
+  background-color: #e3f6f5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#grid .cell {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#grid .cell.safe {
+  background-color: #bae8e8;
+  border-radius: 2px;
+}
+
+#grid .cell.bomb {
+  background-color: #ffd803;
+}
+
+#grid .cell.bomb::before {
+  content: "💣";
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+}
